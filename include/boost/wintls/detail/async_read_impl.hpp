@@ -64,7 +64,7 @@ struct async_read_impl : net::coroutine {
       // TODO: Avoid this copy if possible
       const auto data = m_sspi_impl.decrypt.get(net::buffer_size(m_buffers));
       std::size_t bytes_copied = net::buffer_copy(m_buffers, net::buffer(data));
-      BOOST_ASSERT(bytes_copied == data.size());
+      WINTLS_ASSERT_MSG(bytes_copied == data.size(), "");
       self.complete(wintls::error::error_code{}, bytes_copied);
     }
   }

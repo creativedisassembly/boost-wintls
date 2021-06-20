@@ -96,7 +96,7 @@ namespace detail {
 } // namespace detail
 
 using system_error = std::error_code;
-void throw_system_error(int ec = detail::get_last_error().value()) {
+inline void throw_system_error(int ec = detail::get_last_error().value()) {
 	throw system_error(ec, std::system_category());
 }
 

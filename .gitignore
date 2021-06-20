@@ -8,3 +8,9 @@
 /examples/asio-only/Debug
 /examples/asio-only/x64
 /build
+/examples/.vs/AsioOnly/v16
+/examples/asio-only/.vs
+/examples/asio-only/Release
+/examples/asio-only-async/Release
+/examples/asio-only-async/x64
+/examples/x64/Release

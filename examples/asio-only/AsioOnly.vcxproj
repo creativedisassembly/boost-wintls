@@ -72,19 +72,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\creat\source\repos\asio-1.18.2\include;$(SolutionDir)include\boost;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\asio-1.18.2\include;$(SolutionDir)..\include\boost;$(VC_IncludePath)C:\Users\creat\source\repos\asio-1.18.2\include;$(SolutionDir)include\boost;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)..\..\..\asio-1.18.2\include;$(SolutionDir)..\..\include\boost;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\asio-1.18.2\include;$(SolutionDir)..\include\boost;$(VC_IncludePath)$(SolutionDir)..\..\..\asio-1.18.2\include;$(SolutionDir)..\..\include\boost;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\creat\source\repos\asio-1.18.2\include;$(SolutionDir)include\boost;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\asio-1.18.2\include;$(SolutionDir)..\include\boost;$(VC_IncludePath)C:\Users\creat\source\repos\asio-1.18.2\include;$(SolutionDir)include\boost;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)..\..\..\asio-1.18.2\include;$(SolutionDir)..\..\include\boost;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\asio-1.18.2\include;$(SolutionDir)..\include\boost;$(VC_IncludePath)$(SolutionDir)..\..\..\asio-1.18.2\include;$(SolutionDir)..\..\include\boost;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
